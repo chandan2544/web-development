@@ -1,0 +1,29 @@
+<!-- Write html and css code to style a paragraph inside a div which contains 5 other paragraphs. The first paragraph must have background color yellow and text color red. The other paragraphs must have background color blue and text color white. The HMTL is written below for your reference. Do not change this html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 2</title>
+    <style>
+        /* CSS for the first paragraph */
+        div p:first-child {
+            background-color: yellow;
+            color: red;
+        }
+
+        /* CSS for the other paragraphs */
+        div p {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>This is the first paragraph with a yellow background and red text.</p>
+        <p>This is the second paragraph with a blue background and white text.</p>
+        <p>This is the third paragraph with a blue background and white text.</p>
+        <p>This is the fourth paragraph with a blue background and white text.</p>
+        <p>This is the fifth paragraph with a blue background and white text.</p>
+    </div>
+</body>
+</html>
