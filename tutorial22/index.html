@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Sizing Unit</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html{
+            font-size: 12px;
+        }
+
+        .box {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 2048px; */
+            width: 80vw;
+            height: 10vh;
+            margin: auto;
+            background-color: aquamarine;
+        }
+
+        .container {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 2048px; */
+            width: 80vw;
+            /* height: 80vh; */
+            min-height: 80vh;
+            margin: 23px auto;
+            font-size: 18px;
+            background-color: aquamarine;
+        }
+        .container > div{
+            font-size: 2em; 
+            border: 2px solid red;
+            width: 50%;
+        }
+
+        .container > div > div{
+            border: 2px solid blue;
+            width: 50%;
+        }
+
+        .mycont{ 
+            border: 2px solid black;
+            box-sizing: border-box;
+            margin: 23px auto;
+            color: rgb(0, 0, 0);
+            font-size: 22px;
+            /* width: 100vmin; */
+            width: 80vw;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Css Sizing Unit</h1>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units -->
+    <div class="box">
+        This is a box
+    </div>
+
+    <div class="container">
+        <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis necessitatibus quia quod iste dolorem
+            voluptatem fuga quidem aspernatur. Nihil ipsa sint quae, beatae explicabo saepe impedit laboriosam magni
+            cupiditate expedita voluptates consequatur odit veritatis dolorum doloribus. Iure nemo odit dicta, delectus,
+            modi reiciendis maiores ut quo adipisci libero quam laboriosam nihil voluptate natus nobis earum ad?
+        
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero omnis voluptas est aliquam, dolores rem laudantium nulla maiores odio fugit, totam voluptatem saepe!
+        </div>
+    </div>
+
+        <!-- Expand this to see that this container will adjust its height lorem999 -->
+    </div>
+
+    <div class="mycont">
+        I am another container
+    </div>
+
+    <pre>Absolute Units.
+        cm - centimetres (1 cm = 37.8 px)
+        mm - millimetres
+        in - inches (1 in = 96 px = 2.54cm)
+        pt - points (1pt = 1/72th of 1 in)
+        pc - picas (1pc = 1/6th of 1 in)
+        px - pixel (1px = 1/96th of 1 in)
+        Generally we only use pixels to set dimensions of an element.
+        
+         
+        
+        Relative Units
+        em - Relative to the font size of the parent element. Eg: 5em means the size would be 5 times the current font size.
+        ex - Relative to X height of the existing font
+        ch - Relative to the width/ radius of the character “0”.
+        rem - Relative to the font size of the root element.
+        vw - Relative to 1% of the width of the viewport. (Viewport is the area of the website visible to the user.)
+        vh -  Relative to 1% of the height of the viewport
+        % - Relative to the parent element’s size.
+         
+        
+        Apart from this some of the other metrics used in CSS are- 
+        
+        Opacity: Ranges from 0 to 1
+        RGB & RGBA values: 0 to 255
+        HSL & HSLA values: 0 to 360</pre>
+</body>
+
+</html>
